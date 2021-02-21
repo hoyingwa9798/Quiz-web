@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="quiz-start">
+        <p>Let's do some quiz</p>
+        <div class="arrow-container" id="arrow-container">
+            <i class="far fa-caret-square-right" id="arrow"></i>
+            <h1>Give it a try</h1>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h2>Question</h2>
+        <ul>
+            <li>
+                <input type="radio" id="a" name="answer" value="a">
+                <label for="a">Question</label>
+            </li>
+            <li>
+                <input type="radio" id="b" name="answer" value="b">
+                <label for="b">Question</label>
+            </li>
+            <li>
+                <input type="radio" id="c" name="answer" value="c">
+                <label for="c">Question</label>
+            </li>
+            <li>
+                <input type="radio" id="d" name="answer" value="d">
+                <label for="d">Question</label>
+            </li>
+        </ul>
+        <button type="button" class="button">Submit</button>
+        <div class="next">
+            <i class="fas fa-chevron-circle-left"></i>
+            <i class="fas fa-chevron-circle-right"></i>
+        </div>
+    </div>
+</body>
+</html>

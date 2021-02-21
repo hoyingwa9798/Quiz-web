@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.quiz-start{
+    height: 50vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.quiz-start > p{
+    font-size: 3.5rem;
+}
+
+.quiz-start > i{
+    color: #050505;
+}
+
+.arrow-container{
+    margin-top: 40px;
+    width: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid #050505;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    color: red;
+}
+
+.arrow-container:hover h1,.arrow-container:hover.arrow-container{
+    color: rgb(61, 59, 59);
+}
+
+.arrow-container::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 0 0 50% 50%;
+    background: linear-gradient(315deg, #9fdef7 0%,#8cf3b4 74%);
+    z-index: -1;
+    transition: 0.8s;
+}   
+
+.arrow-container:hover::before{
+    height: 180%;
+}
+
+h1{
+    width: 20vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1px;
+    color:   #050505;
+    transition: 0.3s;
+}
+
+.question-container{
+    background-color: rgb(255, 255, 255);
+    width: 70vh;
+    height: 70vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+}
+
+h2{
+    padding:2rem 2rem 0rem 2rem;
+    font-size: 1.7rem;
+}
+
+ul{
+    list-style-type: none;
+    padding-bottom: 30px;
+}
+
+li{
+    padding-top: 30px;
+    font-size: 1rem;
+}
+
+.button{
+    width: 5rem;
+    height: 3rem;
+    background-color: #9fdef7;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background: linear-gradient(315deg, #9fdef7 0%,#8cf3b4 74%);
+    border-radius: 30px;
+}
+
+.next>i{
+    padding-bottom: 50px;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+
+.next>i:hover{
+    color: rgb(16, 177, 206);
+}
